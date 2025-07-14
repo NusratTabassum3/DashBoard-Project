@@ -7,7 +7,9 @@ export default function Profile() {
       rounded-lg w-full dark:bg-gray-700 lg:w-60
       xl:w-80 flex flex-col justify-between gap-4"
     >
-      Profile
+      <User />
+      <ShortCuts />
+      <DountChart />
     </div>
   );
 }
