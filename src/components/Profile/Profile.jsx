@@ -1,4 +1,6 @@
-import React from "react";
+import User from "./User";
+import ShortCuts from "./ShortCuts";
+import DonutChart from "./DonutChart";
 
 export default function Profile() {
   return (
@@ -9,7 +11,7 @@ export default function Profile() {
     >
       <User />
       <ShortCuts />
-      <DountChart />
+      <DonutChart />
     </div>
   );
 }
