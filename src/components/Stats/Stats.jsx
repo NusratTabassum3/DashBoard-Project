@@ -3,7 +3,7 @@ import { empolyeesData } from "../../constants";
 import Card from "./Card";
 import Balance from "./Balance";
 
-export default function Stats() {
+export default function Stats({ darkMode }) {
   return (
     <div className="flex flex-col md:flex-row gap-5">
       <div className="flex flex-col ga-4 h-full">
@@ -11,7 +11,7 @@ export default function Stats() {
           <Card key={index} data={data} />
         ))}
       </div>
-      <Balance />
+      <Balance darkMode={darkMode} />
     </div>
   );
 }
