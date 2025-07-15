@@ -4,6 +4,7 @@ import { useState } from "react";
 import Main from "./ui/Main";
 import Content from "./ui/Content";
 import Profile from "./components/Profile/Profile";
+import Stats from "./components/Stats/Stats";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -27,7 +28,11 @@ function App() {
         <Sidebar isSidebarOpen={isSidebarOpen} />
 
         <Main>
-          <Content>Main Content</Content>
+          <Content>
+            <Stats darkMode={darkMode} />
+
+            <div className="flex flex-col gap-3 lg:flex-row"></div>
+          </Content>
           <Profile />
         </Main>
       </div>
